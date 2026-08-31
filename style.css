@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f5f7fb;
+    color: #222;
+}
+
+/* Navbar */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 8%;
+
+    background: #111827;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #60a5fa;
+}
+
+
+/* Home */
+
+.hero {
+    min-height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 50px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #e0f2fe,
+        #f8fafc
+    );
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hello {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+
+/* Buttons */
+
+.btn,
+.project-btn {
+    display: inline-block;
+
+    padding: 12px 24px;
+    margin: 5px;
+
+    border-radius: 6px;
+
+    background: #2563eb;
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.btn:hover,
+.project-btn:hover {
+    background: #1d4ed8;
+}
+
+.secondary {
+    background: #374151;
+}
+
+.secondary:hover {
+    background: #1f2937;
+}
+
+
+/* Common Sections */
+
+.section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+
+/* About */
+
+#about p {
+    max-width: 800px;
+    margin: auto;
+
+    font-size: 18px;
+}
+
+
+/* Skills */
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    max-width: 900px;
+    margin: auto;
+}
+
+.skill {
+    background: white;
+
+    padding: 15px 25px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+
+    font-weight: bold;
+}
+
+
+/* Projects */
+
+.projects-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 25px;
+
+    margin-top: 35px;
+}
+
+.project-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+
+    text-align: left;
+}
+
+.project-card h3 {
+    margin-bottom: 15px;
+
+    font-size: 22px;
+}
+
+.project-card p {
+    margin-bottom: 15px;
+}
+
+
+/* Education */
+
+.education-card {
+    max-width: 600px;
+
+    margin: auto;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Contact */
+
+#contact p {
+    margin: 12px;
+    font-size: 18px;
+}
+
+#contact a {
+    color: #2563eb;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 25px;
+
+    text-align: center;
+
+    background: #111827;
+
+    color: white;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .section {
+        padding: 60px 5%;
+    }
+
+}
